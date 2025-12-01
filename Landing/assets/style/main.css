@@ -1,0 +1,273 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --white:#f3f6ff;
+  --title-color:#091133;
+  --text-colo: #6f7cb2;
+  --alt-text-color:#5d6970;
+  --bg: #f3f6ff;
+  --alt-bg:#efecff;
+  --h1-size:49px;
+  --h2-size:36px;
+  --h3-size:16px;
+  --p-size:16px;
+  --section-padding:60px;
+}
+
+
+
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.container {
+  margin: auto;
+  padding: 15px 0;
+
+}
+
+@media (min-width:768px) {
+  .container{
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container{
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container{
+    width: 1170px;
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn{
+  display: block;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: var(--title-color);
+  border-radius: 2px solid ;
+}
+
+section:not(:first-child){
+padding: var(--section-padding) 0 ;
+}
+
+@media (min-width:992px) {
+  .col{
+    width: 45%;
+    
+  }
+  h1{
+  font-size: var(--h1-size);
+}
+
+h2{
+  font-size: var(--h2-size);
+}
+
+}
+header{
+  width: 100%;
+  padding: 15px 0;
+  position: fixed;
+}
+
+ .container nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 30px;
+}
+
+.container nav ul {
+  display: flex;
+}
+
+.container nav ul li a{
+  color: var(--text-colo);
+  padding: 0 30px;
+}
+
+.container nav ul li a:hover{
+  color: var(--title-color);
+}
+
+.container .logo {
+  font-size: 23px;
+  color: var(--text-colo);
+  font-weight: 900;
+}
+
+.container nav ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+}
+
+h1{
+  color: var(--title-color);
+}
+
+p{
+  color: var(--text-colo);
+  line-height: 30px;
+  padding: 10px 0;
+}
+
+.hero .container .col .btn {
+display: inline-block;
+margin: 20px 10 0 0;
+border: 2px solid var(--title-color) ;
+}
+
+.hero .container .col .btn:last-child {
+background-color: var(--white);
+color: var(--title-color);
+}
+
+
+.design-4 .container .title-text {
+  display: flex;
+  width: 80%;
+}
+
+.design-4 .container .title-text img {
+  width: 50px;
+  margin: 20px 20px 0 0;
+}
+
+ .design-0{
+text-align: center;
+background-color: #eff2ffd8;
+}
+.design-0 .container .price{
+  font-size: 45px;
+}
+
+.design-0  .bt{
+  border-radius: 5px;
+  color: white;
+  background-color: var(--title-color);
+  padding: 9px 70px;
+  width: 100px;
+}
+.design-0 .container .bt:hover{
+  border: 2px solid;
+  background-color: transparent;
+}
+
+.design-0 .see{
+  color: #5d6970;
+  font-size: 13px;
+  margin-top: 40px 0 0 0;
+}
+
+.footer{
+  width: 100%;
+  padding: 15px 0;
+  background-color:#e7e9f1;
+}
+
+.footer .container{
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer .container .logo{
+  font-size: 27px;
+}
+
+.footer .container .company{
+  color: var(--alt-text-color);
+}
+
+.footer .container .bt{
+ border-radius: 2px;
+  color: white;
+  background-color: var(--title-color);
+  padding: 9px 10px;
+  font-size: 13px;
+}
+
+.footer .container-footer hr{
+  margin: 0 150px;
+}
+
+.footer .container-footer ul {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  bottom: 5px;
+  padding: 20px 148px;
+  width: 200px;
+
+}
+.footer .container-footer ul li a{
+  color: var(--text-colo);
+}
+
+.footer .container-footer ul li a:hover{
+  color: #091133;
+  background-color: transparent;
+}
+
+.footer .container-footer hr{
+  margin: 0 150px;
+}
+
+.footer .icons ul {
+  display: flex;
+  justify-content: end;
+  align-items: center  ;
+  gap: 30px;
+  padding: 20px 148px;
+}
+.footer .icons ul{
+position: relative;  
+bottom: 60px;
+}
+
+.footer .icons ul li a {
+  color: var(--alt-text-color);
+}
